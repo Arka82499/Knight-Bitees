@@ -1,0 +1,224 @@
+.logo {
+    margin: 0 100px;
+    width: 150px;
+    height: 90px;
+    background: url(./brand-logo.svg);
+    background-repeat: no-repeat;
+    background-size: 150px 90px;
+    cursor: pointer;
+}
+ ul {
+    display: flex;
+    list-style-type: none;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+} 
+.menubar {
+    zoom: 0.8;
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 140px;
+    background: rgba(0, 0, 0, 0.12);
+    display: flex;
+    align-items: center;
+}
+.nav {
+    margin-left: auto;
+    margin-right: 100px;
+    transition: all 0.5s;
+}
+.nav a {
+    text-decoration: none;
+    font-size: 22px;
+    color: rgba(255, 255, 255, 0.781);
+    font-weight: 300;
+}
+.nav li {
+    display: inline-block;
+    margin: 0 20px;
+    list-style: none;
+    list-style-position: inside;
+}
+.link {
+    transition: all 0.5s;
+}
+.nav-icon {
+    display: none;
+}
+.head-div {
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    background: rgb(0 0 0/25%);
+    justify-content: center;
+    align-items: center;
+}
+.title {
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 5px;
+}
+.selected {
+    position: relative;
+    color: white!important;
+    cursor: default;
+    font-size: 22px;
+    font-weight: 700!important;
+}
+element.style {
+    color: white;
+    margin: 10px;
+    cursor: pointer;
+}
+.banner-1 {
+    background: url(./Screenshot\ \(7\).png);
+    background-size: cover;
+    height:1050px;
+}
+.moto {
+    padding: 10px;
+    margin: 30px;
+    text-align: center;
+}
+element.style {
+    font-weight: 700;
+    margin: 30px;
+    font-size: 34px;
+}
+element.style {
+    width: 500px;
+}
+.moto p {
+    font-weight: 300;
+    font-size: 21px;
+    margin: 20px auto;
+}
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+.divider {
+    width: 85%;
+    height: 2.5px;
+    margin: 0 auto 40px;
+    background: violet;
+}
+
+.box-model {
+    display: flex;
+    padding: 20px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 35px;
+}
+.box-model div {
+    text-align: center;
+    width: 300px;
+    margin: 0 10px;
+}
+.box-model img {
+    height: 80px;
+    width: 80px;
+}
+img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+.box-model- h3 {
+    margin-top: 15px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    color: black;
+}
+.box-model div>p {
+    font-size: 15px;
+}
+.pink-btn {
+    background:palevioletred;
+    padding: 10px 20px;
+    width: 195px;
+    color: white;
+    font-size: 19px;
+    font-weight: 700;
+    border-radius: 40px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: all .3s;
+}
+.apply {
+    padding: 0 30px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.apply-grid {
+    display: grid;
+    column-gap: 20px;
+    justify-items: center;
+}
+.apply-grid div {
+    margin-top: 50px;
+    height: 520px;
+    width: 100%;
+    background: url(./Franchise\ apply-grid.png) no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+a:link {
+    text-decoration: none;
+}
+.footer {
+    margin-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+.footer-grid {
+    display: grid;
+    margin-top: 40px;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: space-between;
+    column-gap: 50px;
+}
+.footer-grid div {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    margin-top: 0!important;
+    font-weight: 300!important;
+    font-size: 15px!important;
+    color: #424242;
+}
+.footer-grid img {
+    margin-right: 15px;
+    height: 40px;
+    width: 40px;
+}
+.chatbot {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+  }
+.copyright {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(90deg,violet 0%,rgb(207, 139, 150) 100%);
+    height: 50px;
+    width: 100%;
+    color: white;
+    font-size: 15px;
+}

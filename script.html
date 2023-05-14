@@ -1,0 +1,50 @@
+<script>
+    const yearContainer = document.querySelector(".year");
+    yearContainer.innerHTML = new Date().getFullYear();
+
+    const navIcon = $('.icon')[0];
+    const mask = $('.mask')[0];
+
+    function closeDialog() {
+        $('#nav-icon')[0].checked = false
+        toggleNavIcon()
+    }
+
+    function toggleNavIcon() {
+        navIcon.classList.toggle("open");
+        mask.classList.toggle("opened");
+    }
+
+    function submitEmail() {
+        const email = $('.email-field').val()
+        filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+        if (!filter.test(email)) return
+        $.ajax({
+            type: "POST",
+            url: "https://nrzl4apc.knight-bite.com/system/web_api.php",
+            data: {
+                email,
+                type: 1
+            },
+            success: function (response) {
+                setTimeout(() => {
+                    $('#success-msg').addClass('dnone')
+                }, 5000)
+                $('#success-msg').removeClass('dnone')
+            }
+        });
+    }
+
+    function openLink(link) {
+        window.location = link
+    }
+</script>
+<script>
+function initFreshChat() {
+window.fcWidget.init({
+  token: "7101d33e-dacb-42cf-a69e-7cb342cb7a0c",
+  host: "https://wchat.in.freshchat.com"
+});
+}
+function initialize(i,t){var e;i.getElementById(t)?initFreshChat():((e=i.createElement("script")).id=t,e.async=!0,e.src="https://wchat.in.freshchat.com/js/widget.js",e.onload=initFreshChat,i.head.appendChild(e))}function initiateCall(){initialize(document,"freshchat-js-sdk")}window.addEventListener?window.addEventListener("load",initiateCall,!1):window.attachEvent("load",initiateCall,!1);
+</script>

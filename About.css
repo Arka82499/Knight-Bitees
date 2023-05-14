@@ -1,0 +1,152 @@
+.logo {
+    margin: 0 100px;
+    width: 150px;
+    height: 90px;
+    background: url(./brand-logo.svg);
+    background-repeat: no-repeat;
+    background-size: 150px 90px;
+    cursor: pointer;
+}
+ ul {
+    display: flex;
+    list-style-type: none;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+} 
+.menubar {
+    zoom: 0.8;
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 140px;
+    background: rgba(0, 0, 0, 0.12);
+    display: flex;
+    align-items: center;
+}
+.nav {
+    margin-left: auto;
+    margin-right: 100px;
+    transition: all 0.5s;
+}
+.nav a {
+    text-decoration: none;
+    font-size: 22px;
+    color: rgba(255, 255, 255, 0.781);
+    font-weight: 300;
+}
+.nav li {
+    display: inline-block;
+    margin: 0 20px;
+    list-style: none;
+    list-style-position: inside;
+}
+.link {
+    transition: all 0.5s;
+}
+.nav-icon {
+    display: none;
+}
+.selected {
+    position: relative;
+    color: white!important;
+    cursor: default;
+    font-size: 22px;
+    font-weight: 700!important;
+}
+.app-link { 
+    width: 100%;
+    height: 100vh;
+    background: url(First\ Background.svg);
+    background-size: cover;
+    text-align: center;
+}
+.banner {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    background: url(./About\ banner\ top.webp);
+    background-position: center;
+    background-size: cover;
+}
+.banner h1 {
+    color: white;
+    font-size: 3.8vw;
+    margin-top: 150px;
+    width: 50vw;
+    padding-left: 80px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-family:'Times New Roman', Times, serif;
+}
+.about-grid {
+    margin: 100px 0;
+    row-gap: 70px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-content: center;
+    padding: 0 100px;
+    column-gap: 40px;
+}
+.about-grid {
+    margin: 100px 0;
+    row-gap: 70px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-content: center;
+    padding: 0 100px;
+    column-gap: 40px;
+}
+.grid-item:nth-child(3) {
+    justify-content: space-evenly;
+}
+.grid-item img {
+    width: 100%;
+    object-fit: cover;
+}
+img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+.locations {
+    font-size: 20px;
+}
+.locations h1, .follow-us h1 {
+    color: #424242;
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.locations span {
+    color: darkgrey;
+    font-weight: 700;
+}
+.profile-tags a {
+    margin-right: 30px;
+}
+.chatbot {
+    /* border-radius: 6px 6px 6px 2px; */
+    /* height: 17px; */
+    /* left: 32%; */
+    position: fixed;
+    right: 0;
+    bottom: 0;
+  }
+.copyright {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(90deg,violet 0%,rgb(207, 139, 150) 100%);
+    
+    height: 50px;
+    width: 100%;
+    color: #fff;
+    font-size: 15px;
+}
